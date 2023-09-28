@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="305dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btnpercentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnClear"
+        android:layout_width="88dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="1dp"
+        android:background="@null"
+        android:contentDescription="Clear the output"
+        app:layout_constraintBottom_toTopOf="@+id/btn7"
+        app:layout_constraintEnd_toStartOf="@+id/btnBackspace"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/btnclear_selector" />
+
+    <ImageButton
+        android:id="@+id/btnpercentage"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:background="@null"
+        android:contentDescription="Calculate %"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBackspace"
+        app:layout_constraintEnd_toStartOf="@+id/btndivision"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBackspace"
+        app:srcCompat="@drawable/btnpercentage_selector" />
+
+    <ImageButton
+        android:id="@+id/btndivision"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:background="@null"
+        android:contentDescription="Calculate /"
+        app:layout_constraintBottom_toBottomOf="@+id/btnpercentage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnpercentage"
+        app:srcCompat="@drawable/btndivision_selector" />
+
+    <ImageButton
+        android:id="@+id/btn7"
+        android:layout_width="88dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="1dp"
+        android:background="@null"
+        android:contentDescription="Print 7"
+        app:layout_constraintBottom_toTopOf="@+id/btn4"
+        app:layout_constraintEnd_toStartOf="@+id/btn8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/btn7_selector" />
+
+    <ImageButton
+        android:id="@+id/btn9"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:background="@null"
+        android:contentDescription="Print 9"
+        app:layout_constraintBottom_toBottomOf="@+id/btn8"
+        app:layout_constraintEnd_toStartOf="@+id/btntimes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn8"
+        app:srcCompat="@drawable/btn9_selector" />
+
+    <ImageButton
+        android:id="@+id/btntimes"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:background="@null"
+        android:contentDescription="mulitply"
+        app:layout_constraintBottom_toBottomOf="@+id/btn9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn9"
+        app:srcCompat="@drawable/btntimes_selector" />
+
+    <ImageButton
+        android:id="@+id/btn4"
+        android:layout_width="88dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="1dp"
+        android:background="@null"
+        android:contentDescription="Print 4"
+        app:layout_constraintBottom_toTopOf="@+id/btn1"
+        app:layout_constraintEnd_toStartOf="@+id/btn5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/btn4_selector" />
+
+    <ImageButton
+        android:id="@+id/btn6"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:background="@null"
+        android:contentDescription="Print 6"
+        app:layout_constraintEnd_toStartOf="@+id/btnminus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn5"
+        app:layout_constraintTop_toTopOf="@+id/btn5"
+        app:srcCompat="@drawable/btn6_selector" />
+
+    <ImageButton
+        android:id="@+id/btnminus"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:background="@null"
+        android:contentDescription="substract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn6"
+        app:layout_constraintTop_toTopOf="@+id/btn6"
+        app:srcCompat="@drawable/btnminus_selector" />
+
+    <ImageButton
+        android:id="@+id/btn1"
+        android:layout_width="88dp"
+        android:layout_height="89dp"
+        android:background="@null"
+        android:contentDescription="Print 1"
+        app:layout_constraintEnd_toStartOf="@+id/btn2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn2"
+        app:srcCompat="@drawable/btn1_selector" />
+
+    <ImageButton
+        android:id="@+id/btn2"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:background="@null"
+        android:contentDescription="Print 2"
+        app:layout_constraintEnd_toStartOf="@+id/btn3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintTop_toTopOf="@+id/btn3"
+        app:srcCompat="@drawable/btn2_selector" />
+
+    <ImageButton
+        android:id="@+id/btnBackspace"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:background="@null"
+        android:contentDescription="Erase 1 element"
+        app:layout_constraintBottom_toBottomOf="@+id/btnClear"
+        app:layout_constraintEnd_toStartOf="@+id/btnpercentage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnClear"
+        app:srcCompat="@drawable/btnbackspace_selector" />
+
+    <ImageButton
+        android:id="@+id/btn5"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:background="@null"
+        android:contentDescription="Print 5"
+        app:layout_constraintEnd_toStartOf="@+id/btn6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn4"
+        app:layout_constraintTop_toTopOf="@+id/btn4"
+        app:srcCompat="@drawable/btn5_selector" />
+
+    <ImageButton
+        android:id="@+id/btn8"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:background="@null"
+        android:contentDescription="Print 8"
+        app:layout_constraintBottom_toBottomOf="@+id/btn7"
+        app:layout_constraintEnd_toStartOf="@+id/btn9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn7"
+        app:srcCompat="@drawable/btn8_selector" />
+
+    <ImageButton
+        android:id="@+id/btn3"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:background="@null"
+        android:contentDescription="Print 3"
+        app:layout_constraintEnd_toStartOf="@+id/btnplus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn2"
+        app:layout_constraintTop_toTopOf="@+id/btnplus"
+        app:srcCompat="@drawable/btn3_selector" />
+
+    <ImageButton
+        android:id="@+id/btnplus"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="1dp"
+        android:background="@null"
+        android:contentDescription="increment"
+        app:layout_constraintBottom_toTopOf="@+id/btnequal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn3"
+        app:srcCompat="@drawable/btnplus_selector" />
+
+    <ImageButton
+        android:id="@+id/btnequal"
+        android:layout_width="89dp"
+        android:layout_height="90dp"
+        android:background="@null"
+        android:contentDescription="getresult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btncomma"
+        app:layout_constraintTop_toTopOf="@+id/btncomma"
+        app:srcCompat="@drawable/btnequal_selector" />
+
+    <ImageButton
+        android:id="@+id/btncomma"
+        android:layout_width="89dp"
+        android:layout_height="90dp"
+        android:background="@null"
+        android:contentDescription="comma"
+        app:layout_constraintEnd_toStartOf="@+id/btnequal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn0"
+        app:layout_constraintTop_toTopOf="@+id/btn0"
+        app:srcCompat="@drawable/btncomma_selector" />
+
+    <ImageButton
+        android:id="@+id/btncomma2"
+        android:layout_width="88dp"
+        android:layout_height="90dp"
+        android:background="@null"
+        android:contentDescription="comma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/btncomma_selector" />
+
+    <ImageButton
+        android:id="@+id/btn0"
+        android:layout_width="89dp"
+        android:layout_height="90dp"
+        android:background="@null"
+        android:contentDescription="Print 0"
+        app:layout_constraintEnd_toStartOf="@+id/btncomma"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btncomma2"
+        app:layout_constraintTop_toTopOf="@+id/btncomma2"
+        app:srcCompat="@drawable/btn0_selector" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
